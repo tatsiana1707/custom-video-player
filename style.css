@@ -1,0 +1,141 @@
+body{
+    align-items: center;
+    background: cornsilk;
+    background: linear-gradient(to right, #AD66D5, #48036F);
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+.player {
+    
+    max-width: 800px;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  
+  .player:full-screen {
+     max-width: none;
+     width: 100%;
+  }
+ .player-video{
+     width: 100%;
+     display: block;
+ } 
+  
+ 
+  .player-controls {
+    align-items: center;
+    display: flex;
+    transition: all 0.3s;
+    flex-wrap: wrap;
+    background-color: #030303;
+    height: 85px;
+    position: relative;
+    margin-top: 0px;
+  }
+  .player-controls-btn{
+      padding-left: 25px;
+  }
+ 
+  .player-controls-btn-back, .player-controls-btn-play, .player-controls-btn-forward, .player-controls-progress1, .player-controls-volume, .player-controls-screen {
+    background: #030303;
+    border: none;
+  }
+  
+ 
+  
+  .player-controls-back, .player-controls-play, .player-controls-forward, .player-controls-progress1, .player-controls-progress2 {
+    top: 31px;
+  }
+  
+  .player-controls-back {
+    left: 35px;
+  }
+  
+  .player-controls-play {
+    left: 110px;
+  }
+  
+  
+  
+  .player-controls-forward {
+    left: 194px;
+    background-color: transparent;
+  }
+  
+  progress[value] {
+    appearance: none;
+    border: none;
+    border-radius: 3px;
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.25) inset;
+    color: rgb(150, 33, 111);
+    display: inline;
+    height: 15px;
+    order: 1;
+    position: relative;
+    width: 100%;
+  }
+
+  
+  progress[value]::-webkit-progress-bar {
+    background-color: white;
+    border-radius: 3px;
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.25) inset;
+  }
+
+  progress[value]::-webkit-progress-value {
+    background-image: 
+    linear-gradient(to right, green, cyan);
+    border-radius: 3px;
+    position: relative;
+    transition: width 1s linear;
+  }
+  .player-controls-progress1 {
+    left: 240px;
+    width: 355px;
+  } 
+  .player-controls-progress2 {
+    left: 1167px;
+    width: 155px;
+  }
+  
+  .player-controls-screen {
+    top: 25px;
+    left: 1363px;
+  }
+  
+  .video-content-player-back path,
+  .video-content-player-play path,
+  
+  .video-content-player-forward path,
+  .video-content-player-volume path,
+  .video-content-player-screen path {
+    fill: #F7F7F7;
+    -webkit-transition: .2s;
+    transition: .2s;
+  }
+  
+  .video-player-back path:hover,
+  .video-player-play path:hover,
+  
+  .video-player-forward path:hover,
+  .video-player-volume path:hover,
+  .video-content-player-screen path:hover {
+    fill: #f7f7f7;
+    stroke: #07b6ea;
+    stroke-width: 4px;
+  }
+
+
+
+
+
+
+
+
+
+  
+  
